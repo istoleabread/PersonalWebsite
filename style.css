@@ -1,0 +1,132 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url("mobile.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topBar a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 15px;
+    font-family: 'Lato', sans-serif;
+}
+.hamborgerImage{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.bar{
+    background-color: white;
+    width: 20px;
+    height: 2px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    transition: .6s;
+}
+.navLinks{
+    position: absolute;
+    width: 100vw;
+    top: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+.navLinks ul{
+    width: 100%;
+    background-color: white;
+    list-style-type: none;
+    transform: translateY(-100%);
+    transition: .6s;
+}
+.navLinks li{
+    padding: 10px;
+}
+.navLinks a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.navLinks a:hover{
+    text-decoration: underline;
+}
+input.headerBar{
+    display: none;
+}
+label{
+    cursor: pointer;
+}
+input.headerBar:checked ~ .navLinks ul{
+    transform: translateY(0);
+}
+input.headerBar:checked + .labelBar .bar1{
+    transform: rotateZ(45deg);
+    transform-origin: top left;
+}
+input.headerBar:checked + .labelBar .bar2{
+    opacity: 0;
+}
+input.headerBar:checked + .labelBar .bar3{
+    transform: rotateZ(-45deg);
+    transform-origin: bottom left;
+}
+.midText{
+    color: white;
+    height: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+.midText h2{
+    font-size: 42px;
+    font-weight: bolder;
+}
+.midText p{
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+.midText span{
+    font-weight: 500;
+}
+.midText ::selection{
+    background-color: rgba(255, 255, 255, 0.65);
+    color:black;
+}
+.icons{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.icons img{
+    width: 23px;
+}
+.icons img.twitter{
+    width: 18px;
+}
+.icons img.meta{
+    width: 28px;
+}
+.icons a{
+    padding-right: 10px;
+}
+@media screen and (min-width: 1024px) {
+    header{
+        background-image: url("pc.jpg");
+    }
+}
