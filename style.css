@@ -93,11 +93,11 @@ input.headerBar:checked + .labelBar .bar3{
     font-family: 'Montserrat', sans-serif;
 }
 .midText h2{
-    font-size: 42px;
+    font-size: 3em;
     font-weight: bolder;
 }
 .midText p{
-    font-size: 36px;
+    font-size: 2.3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
 }
@@ -105,7 +105,7 @@ input.headerBar:checked + .labelBar .bar3{
     font-weight: 500;
 }
 .midText ::selection{
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: white;
     color:black;
 }
 .icons{
@@ -125,6 +125,101 @@ input.headerBar:checked + .labelBar .bar3{
 .icons a{
     padding-right: 10px;
 }
+
+/* About Section */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 45px 20px;
+}
+.aboutImages{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0px;
+}
+img.me_irl{
+    width: 85%;
+}
+img.dots{
+    width: 85%;
+    height: 93%;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+.greyAbout{
+    width: 85%;
+    height: 93%;
+    position: absolute;
+    background-color: rgb(190, 190, 190, 0.3);
+    z-index: -2;
+    right: 0;
+    bottom: 70px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+}
+.content p{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+.content span{
+    font-weight: 600;
+}
+p.role{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2px;
+    margin-bottom: 0px;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.skillBar{
+    font-family: 'Lato', sans-serif;
+    border-radius: 6px;
+    color: white;
+    margin-bottom: 30px;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+}
+.black{
+    padding: 6px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+.webDev{
+    width: 90%;
+}
+.webDev::after{
+    content: '90%';
+}
+.python{
+    width: 85%;
+}
+.python::after{
+    content: '85%';
+}
+.java{
+    width: 75%;
+}
+.java::after{
+    content: '75%';
+}
+
+
+
 @media screen and (min-width: 1024px) {
     header{
         background-image: url("pc.jpg");
