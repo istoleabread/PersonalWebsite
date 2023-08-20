@@ -4,18 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
+    <title>Advik | Portfolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;800&family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="topBar" tabindex="0">
+    <header id="home">
+        <div class="topBar">
             <a href="#"><h2>Advik</h2></a>
             <div class="hamborgerImage">
                 <input type="checkbox" class="headerBar" id="navBar"/>
@@ -26,8 +27,8 @@
                 </label>
                 <div class="navLinks">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Testimonials</a></li>
                         <li><a href="#">Contact</a></li>
@@ -47,36 +48,130 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <div class="aboutImages">
             <div class="greyAbout"></div>
             <img src="dots.png" class="dots">
-            <img src="me_irl.png" alt="me" class="me_irl">
+            <img src="me_irl.png" alt="a photo of me smiling" title="me_irl" class="me_irl">
         </div>
-        <div class="content">
-            <h1>About Me.</h1>
-            <p class="role">Web Developer</p>
-            <p>I am <span>Advik Singh Somvanshi</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, suscipit. Iusto quasi, voluptatem libero voluptatibus dolores similique voluptates ut minus tempore exercitationem dolorum animi tenetur laudantium veritatis quod ipsa fugit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, inventore! Ipsam omnis eos aliquam tempore magnam. Qui quaerat dolores dolore perferendis ducimus corrupti est.</p>
-        </div>
-        <div class="skills">
-            <div class="skillBar">
-                <div class="black webDev">
-                    <p>Web Development</p>
-                </div>
+        <div class="contentWrapper">
+            <div class="content">
+                <h1>About Me.</h1>
+                <p class="role">Web Developer</p>
+                <p>I am <span>Advik Singh Somvanshi</span>, a student of Zoho Schools of Technology. As a front-end developer, I believe that every pixel, every gradient and every animation holds the potential to create a lasting impression. For me, the web is not just a medium but a playground, where design meets emotion, and I am its dedicated craftsman.</p>
             </div>
-            <div class="skillBar">
-                <div class="black java">
-                    <p>Java</p>
+            <div class="skills">
+                <div class="skillBar">
+                    <div class="black webDev">
+                        <p>Web Development</p>
+                    </div>
                 </div>
-            </div>
-            <div class="skillBar">
-                <div class="black python">
-                    <p>Python</p>
+                <div class="skillBar">
+                    <div class="black java">
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <div class="black python">
+                        <p>Problem Solving</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="portfolio">
+        <h1>Portfolio</h1>
+        <div class="portfolioImages">
+            <div class="portfoliocard">
+                <div class="portfolioHoverStuff">
+                    <p>Website about Finland</p>
+                    <div class="portfolioHoverIcons">
+                        <a href="https://finland.istoleabread.repl.co" target="_blank"><div class="icon1 faIcons hoverIcons"></div></a>
+                        <a href="https://replit.com/@istoleabread/Finland#index.html" target="_blank"><div class="icon2 faIcons hoverIcons"></div></a>
+                    </div>
+                </div>
+                <img src="project1.png" alt="Finland Website">
+            </div>
+            <div class="portfoliocard">
+                <div class="portfolioHoverStuff">
+                    <p>Parallax Scrolling Website</p>
+                    <div class="portfolioHoverIcons">
+                        <a href="https://parallaxscrolling.istoleabread.repl.co" target="_blank"><div class="icon1 faIcons hoverIcons"></div></a>
+                        <a href="https://replit.com/@istoleabread/ParallaxScrolling#index.html" target="_blank"><div class="icon2 faIcons hoverIcons"></div></a>
+                    </div>
+                </div>
+                <img src="project2.png" alt="Parallax Scrolling Website">
+            </div>
+            <div class="portfoliocard">
+                <div class="portfolioHoverStuff">
+                    <p>Circle Transitions</p>
+                    <div class="portfolioHoverIcons">
+                        <a href="https://wiiiieeeeeeeeeee.istoleabread.repl.co" target="_blank"><div class="icon1 faIcons hoverIcons"></div></a>
+                        <a href="https://replit.com/@istoleabread/Wiiiieeeeeeeeeee#style.css" target="_blank"><div class="icon2 faIcons hoverIcons"></div></a>
+                    </div>
+                </div>
+                <img src="project3.png" alt="Circle Transitions Project">
+            </div>
+            <div class="portfoliocard">
+                <div class="portfolioHoverStuff">
+                    <p>Different 3D Transitions</p>
+                    <div class="portfolioHoverIcons">
+                        <a href="https://transform.istoleabread.repl.co" target="_blank"><div class="icon1 faIcons hoverIcons"></div></a>
+                        <a href="https://replit.com/@istoleabread/Transform#index.html" target="_blank"><div class="icon2 faIcons hoverIcons"></div></a>
+                    </div>
+                </div>
+                <img src="project4.png" alt="3D Transitions Project">
+            </div>
+            <div class="portfoliocard">
+                <div class="portfolioHoverStuff">
+                    <p>Card Layout website about EDM Artists</p>
+                    <div class="portfolioHoverIcons">
+                        <a href="https://ema.istoleabread.repl.co" target="_blank"><div class="icon1 faIcons hoverIcons"></div></a>
+                        <a href="https://replit.com/@istoleabread/EMA#style.css" target="_blank"><div class="icon2 faIcons hoverIcons"></div></a>
+                    </div>
+                </div>
+                <img src="project5.png" alt="Card Layout Website">
+            </div>
+            <div class="portfoliocard">
+                <div class="portfolioHoverStuff">
+                    <p>Full Width Hover Effect Website</p>
+                    <div class="portfolioHoverIcons">
+                        <a href="https://famousfestivals.istoleabread.repl.co" target="_blank"><div class="icon1 faIcons hoverIcons"></div></a>
+                        <a href="https://replit.com/@istoleabread/FamousFestivals#style.css" target="_blank"><div class="icon2 faIcons hoverIcons"></div></a>
+                    </div>
+                </div>
+                <img src="project6.png" alt="Width Change on hover">
+            </div>
+    </section>
+    <section class="Contact">
+        <h1>Contact Me</h1>
+        <div class="contactIcons">
+            <div class="iconInfo">
+                <div class="addressIcon contactSingleIcon">
+                    <p>Address</p>
+                    <p>Zoho Corp HQ, Chennai</p>
+                </div>
+            </div>
+            <div class="iconInfo">
+                <div class="emailIcon contactSingleIcon">
+                    <p>Email</p>
+                    <a href="mailto:advik.singh@zohocorp.com">advik.singh@zohocorp.com</a>
+                </div>
+            </div>
+            <div class="iconInfo">
+                <div class="phoneIcon contactSingleIcon">
+                    <p>Phone</p>
+                    <p>+91 73884 67939</p>
+                </div>
+            </div>
+        </div>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email Address">
+            <textarea name="textarea" id="" placeholder="Message" required></textarea>
+            <input type="submit"></button>
+        </form>
+    </section>
 </body>
 
 </html>
