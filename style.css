@@ -264,6 +264,7 @@ p.role{
     width: 80vw;
 }
 .portfolioHoverStuff{
+    text-align: center;
     position: absolute;
     top: 5px;
     bottom: 9px;
@@ -491,6 +492,9 @@ p.role{
     .portfolioHoverStuff{
         max-width: 370px;
     }
+    .Contact input, textarea{
+        max-width: 900px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -548,5 +552,13 @@ p.role{
     }
     .portfolioHoverStuff{
         max-width: 430px;
+    }
+    .contactIcons{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .iconInfo{
+        max-width: 250px;
+        flex-grow: 1;
     }
 }
