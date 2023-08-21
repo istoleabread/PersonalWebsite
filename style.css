@@ -581,17 +581,23 @@ footer p{
         max-width: 360px;
         padding-left: 30px;
     }
+    .portfolio{
+        height: 90vh;
+    }
+    .portfolio h1{
+        font-size: 2.4rem;
+    }
     .portfolioImages{
         flex-direction: row;
         flex-wrap: wrap;
     }
     .portfoliocard{
-        width: 28%;
+        width: 30%;
         margin: 20px;
-        max-width: 430px;
+        max-width: 450px;
     }
     .portfolioHoverStuff{
-        max-width: 430px;
+        max-width: 450px;
     }
     .contactIcons{
         flex-direction: row;
@@ -603,6 +609,10 @@ footer p{
     }
     .Contact{
         max-width: 900px;
+        height: 60vh;
+    }
+    .Contact h1{
+        font-size: 2.3rem;
     }
     .Contact form{
         flex-direction: row;
