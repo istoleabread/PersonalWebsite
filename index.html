@@ -29,9 +29,8 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#portfolio">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,11 +39,11 @@
             <h2>Hello</h2>
             <p>I am <span>Advik</span></p>
             <div class="icons">
-                <a href="#"><img src="linkedin.png" title="Linkedin" alt="Linkedin Logo"></a>
-                <a href="#"><img src="twitterX.png" title="X (formerly known as Twitter)" class="twitter" alt="Twitter X Logo"></a>
-                <a href="#"><img src="github.png" title="Github" alt="Github Logo"></a>
-                <a href="#"><img src="meta.png" title="Meta (Facebook)" class="meta" alt="Meta Logo"></a>
-                <a href="#"><img src="instagram.png" title="Instagram" alt="Instagram Logo"></a>
+                <a href="#" class="linkedin headerIcon"></a>
+                <a href="#" class="x headerIcon"></a>
+                <a href="#" class="github headerIcon"></a>
+                <a href="#" class="telegram headerIcon"></a>
+                <a href="#" class="insta headerIcon"></a>
             </div>
         </div>
     </header>
@@ -79,7 +78,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h1>Portfolio</h1>
         <div class="portfolioImages">
             <div class="portfoliocard">
@@ -143,35 +142,40 @@
                 <img src="project6.png" alt="Width Change on hover">
             </div>
     </section>
-    <section class="Contact">
-        <h1>Contact Me</h1>
-        <div class="contactIcons">
-            <div class="iconInfo">
-                <div class="addressIcon contactSingleIcon">
-                    <p>Address</p>
-                    <p>Zoho Corp HQ, Chennai</p>
+    <section class="ContactSect" id="contact">
+        <div class="Contact">
+            <h1>Contact Me</h1>
+            <div class="contactIcons">
+                <div class="iconInfo">
+                    <div class="addressIcon contactSingleIcon">
+                        <p>Address</p>
+                        <p>Zoho Corp HQ, Chennai</p>
+                    </div>
+                </div>
+                <div class="iconInfo">
+                    <div class="emailIcon contactSingleIcon">
+                        <p>Email</p>
+                        <a href="mailto:advik.singh@zohocorp.com">advik.singh@zohocorp.com</a>
+                    </div>
+                </div>
+                <div class="iconInfo">
+                    <div class="phoneIcon contactSingleIcon">
+                        <p>Phone</p>
+                        <p>+91 73884 67939</p>
+                    </div>
                 </div>
             </div>
-            <div class="iconInfo">
-                <div class="emailIcon contactSingleIcon">
-                    <p>Email</p>
-                    <a href="mailto:advik.singh@zohocorp.com">advik.singh@zohocorp.com</a>
-                </div>
-            </div>
-            <div class="iconInfo">
-                <div class="phoneIcon contactSingleIcon">
-                    <p>Phone</p>
-                    <p>+91 73884 67939</p>
-                </div>
-            </div>
+            <form class="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Email Address">
+                <textarea name="textarea" id="" placeholder="Message" required></textarea>
+                <input type="submit"></input>
+            </form>
         </div>
-        <form class="contactForm">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Email Address">
-            <textarea name="textarea" id="" placeholder="Message" required></textarea>
-            <input type="submit"></button>
-        </form>
     </section>
+    <footer>
+        <p>Copyright &copy; 2023 | All Rights Reserved | advik.dev</p>
+    </footer>
 </body>
 
 </html>
