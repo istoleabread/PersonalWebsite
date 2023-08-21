@@ -161,6 +161,7 @@ a.headerIcon:hover::after{
     flex-direction: column;
     align-items: center;
     padding: 45px 20px;
+    overflow: hidden;
 }
 .aboutImages{
     display: flex;
@@ -265,7 +266,7 @@ p.role{
 /* Portfolio Section */
 
 .portfolio{
-    background-color: rgb(246,246,246);
+    background-color: rgb(238, 238, 238);
     padding: 50px 0px;
 }
 .portfolioImages{
@@ -299,7 +300,7 @@ p.role{
     left: 5px;
     right: 5px;
     gap: 6px;
-    background-color: rgba(240, 240, 240, 0.9);
+    background-color: rgba(238, 238, 238, 0.9);
     border-radius: 3px;
     display: flex;
     flex-direction: column;
@@ -397,7 +398,7 @@ p.role{
     font: var(--fa-font-solid);
     content: "\f5a0";
     color: black;
-    background-color: rgba(240, 240, 240, 0.9);
+    background-color: rgba(238, 238, 238, 0.9);
     padding: 10px;
     border-radius: 50%;
 }
@@ -409,7 +410,7 @@ p.role{
     font: var(--fa-font-solid);
     content: "\f0e0";
     color: black;
-    background-color: rgba(240, 240, 240, 0.9);
+    background-color: rgba(238, 238, 238, 0.9);
     padding: 10px;
     border-radius: 50%;
 }
@@ -422,7 +423,7 @@ p.role{
     font: var(--fa-font-solid);
     content: "\f095";
     color: black;
-    background-color: rgba(240, 240, 240, 0.9);
+    background-color: rgba(238, 238, 238, 0.9);
     padding: 10px;
     border-radius: 50%;
 }
@@ -437,7 +438,7 @@ p.role{
     width: 100%;
     padding: 12px 8px;
     border-radius: 5px;
-    background-color: rgba(240, 240, 240, 0.9);
+    background-color: rgba(238, 238, 238, 0.9);
     font-family: 'Montserrat', sans-serif;
     border: none;
     transition: .35s;
@@ -447,10 +448,10 @@ p.role{
     padding: 8px;
 }
 .Contact input:hover{
-    background-color: rgba(240, 240, 240, 0.6);
+    background-color: rgba(238, 238, 238, 0.6);
 }
 .Contact textarea:hover{
-    background-color: rgba(240, 240, 240, 0.6);
+    background-color: rgba(238, 238, 238, 0.6);
 }
 .Contact input[type="submit"]{
     font-family: 'Montserrat', sans-serif;
@@ -489,7 +490,7 @@ footer p{
 
 @media screen and (min-width: 768px) {
     header{
-        background-image: url("pc.jpg");
+        background-image: url("pc-dark.jpg");
     }
     .icons img{
         width: 27px;
@@ -519,6 +520,7 @@ footer p{
     }
     .navLinks a{
         color: white;
+        font-weight: 500;
     }
     .navLinks li{
         padding: 0px;
@@ -583,7 +585,7 @@ footer p{
         padding-left: 30px;
     }
     .portfolio{
-        height: 90vh;
+        height: 95vh;
     }
     .portfolio h1{
         font-size: 2.4rem;
