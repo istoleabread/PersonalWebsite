@@ -3,9 +3,10 @@ html{
     height: 100%;
 }
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 header{
     background-image: url("mobile.jpg");
@@ -21,7 +22,7 @@ header{
 .topBar a{
     text-decoration: none;
     color: white;
-    padding: 20px 15px;
+    padding: 20px 25px;
     font-family: 'Lato', sans-serif;
 }
 .hamborgerImage{
@@ -33,7 +34,7 @@ header{
     background-color: white;
     width: 20px;
     height: 2px;
-    margin-right: 10px;
+    margin-right: 23px;
     margin-bottom: 5px;
     transition: .6s;
 }
@@ -63,6 +64,7 @@ header{
 .navLinks a::after{
     content: '';
     width: 0%;
+    margin-top: 8px;
     height: 2px;
     display: block;
     position: absolute;
@@ -160,6 +162,7 @@ a.headerIcon:hover::after{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 45px 20px;
     overflow: hidden;
 }
@@ -169,6 +172,8 @@ a.headerIcon:hover::after{
     justify-content: center;
     position: relative;
     padding: 20px 0px;
+    width: 82vw;
+    /* border: 1px solid; */
     max-width: 450px;
 }
 img.me_irl{
@@ -182,7 +187,7 @@ img.dots{
     position: absolute;
     z-index: -1;
 }
-.greyAbout{
+.redAbout{
     width: 85%;
     height: 93%;
     position: absolute;
@@ -226,7 +231,7 @@ p.role{
 }
 .skillBar{
     font-family: 'Lato', sans-serif;
-    max-width: 600px;
+    max-width: 650px;
     width: 82vw;
     border-radius: 6px;
     color: white;
@@ -260,6 +265,9 @@ p.role{
 }
 .contentWrapper{
     display: flex;
+    align-items: center;
+    width: 82vw;
+    max-width: 650px;
     flex-direction: column;
 }
 
@@ -280,7 +288,7 @@ p.role{
     justify-content: center;
 }
 .portfolio h1{
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 50px;
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
@@ -358,11 +366,126 @@ p.role{
     color: rgba(0,0,0,0.6);
 }
 
+/* Testimonials Section */
+.testimonialParentSect{
+    overflow: hidden;
+}
+.testimonials-section{
+    width: 100vw;
+    overflow: hidden;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.testimonials-section h1{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+.testimonials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* align-items: center; */
+}
+.testimonials input{
+    display: none;
+}
+.radioImgs{
+    display: flex;
+    width: 300%;
+}
+.slideImg{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.testimonialSingle{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 6px;
+}
+.testimonialSingle img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonialSingle p:nth-child(2){
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.testimonialSingle p:nth-child(3){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.testimonialSingle p:nth-child(4){
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    color: rgba(0,0,0,0.6);
+    font-weight: 500;
+}
+.radioImgs .first{
+    transition: .5s;
+}
+#radio1:checked ~ .radioImgs .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .radioImgs .first{
+    margin-left: -33.34%;
+}
+#radio3:checked ~ .radioImgs .first{
+    margin-left: -66.67%;
+}
+.controls{
+    /* width: 90%; */
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.radioBtn{
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .35s;
+}
+.radioBtn:not(:last-child){
+    margin-right: 8px;
+}
+.testimonials input:nth-child(1):checked ~ .controls label:nth-child(1){
+    background-color: black;
+}
+.testimonials input:nth-child(2):checked ~ .controls label:nth-child(2){
+    background-color: black;
+}
+.testimonials input:nth-child(3):checked ~ .controls label:nth-child(3){
+    background-color: black;
+}
+
 /* Contact Section */
 .ContactSect{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(238, 238, 238);
 }
 .Contact{
     padding: 50px 0px;
@@ -373,7 +496,7 @@ p.role{
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 40px;
 }
 .contactIcons{
@@ -402,7 +525,7 @@ p.role{
     font: var(--fa-font-solid);
     content: "\f5a0";
     color: black;
-    background-color: rgba(238, 238, 238, 0.9);
+    background-color: white;
     padding: 10px;
     border-radius: 50%;
 }
@@ -414,7 +537,7 @@ p.role{
     font: var(--fa-font-solid);
     content: "\f0e0";
     color: black;
-    background-color: rgba(238, 238, 238, 0.9);
+    background-color: white;
     padding: 10px;
     border-radius: 50%;
 }
@@ -427,7 +550,7 @@ p.role{
     font: var(--fa-font-solid);
     content: "\f095";
     color: black;
-    background-color: rgba(238, 238, 238, 0.9);
+    background-color: white;
     padding: 10px;
     border-radius: 50%;
 }
@@ -442,7 +565,7 @@ p.role{
     width: 100%;
     padding: 12px 8px;
     border-radius: 5px;
-    background-color: rgba(238, 238, 238, 0.9);
+    background-color: white;
     font-family: 'Montserrat', sans-serif;
     border: none;
     transition: .35s;
@@ -452,10 +575,10 @@ p.role{
     padding: 8px;
 }
 .Contact input:hover{
-    background-color: rgba(238, 238, 238, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 .Contact textarea:hover{
-    background-color: rgba(238, 238, 238, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 .Contact input[type="submit"]{
     font-family: 'Montserrat', sans-serif;
@@ -470,7 +593,7 @@ p.role{
     align-self: flex-start;
 }
 .Contact input[type="submit"]:hover{
-    background-color: white;
+    background-color: rgba(238, 238, 238);
     color: black;
 }
 
@@ -544,6 +667,9 @@ footer p{
     .portfolioHoverStuff{
         max-width: 370px;
     }
+    .testimonialSingle{
+        max-width: 570px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -562,7 +688,7 @@ footer p{
         height: 42%;
     }
     .about{
-        gap: 50px;
+        gap: 60px;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -602,6 +728,16 @@ footer p{
     }
     .portfolioHoverStuff{
         max-width: 450px;
+    }
+    .testimonials-section{
+        height: 50vh;
+    }
+    .radioImgs .first{
+        transition: .8s;
+    }
+    .testimonialSingle{
+        max-width: 800px;
+        
     }
     .contactIcons{
         flex-direction: row;
