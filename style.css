@@ -139,8 +139,8 @@ a.x::after{
 a.github::after{
     content: '\f09b';
 }
-a.telegram::after{
-    content: '\f2c6';
+a.snapchat::after{
+    content: '\f2ab';
 }
 a.insta::after{
     content: '\f16d';
