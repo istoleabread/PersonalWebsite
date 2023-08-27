@@ -374,7 +374,7 @@ p.role{
 .testimonials-section{
     width: 100vw;
     overflow: hidden;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
