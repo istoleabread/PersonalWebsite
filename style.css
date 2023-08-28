@@ -734,7 +734,7 @@ footer p{
         max-width: 450px;
     }
     .testimonials-section{
-        height: 50vh;
+        height: 60vh;
     }
     .radioImgs .first{
         transition: .8s;
@@ -753,7 +753,7 @@ footer p{
     }
     .Contact{
         max-width: 900px;
-        height: 60vh;
+        /* height: 60vh; */
     }
     .Contact h1{
         font-size: 2.3rem;
@@ -776,6 +776,7 @@ footer p{
 
 @media screen and (min-width: 1200px) {
     .portfolio{
+        /* height: 95vh; */
         align-items: center;
         padding: 0px;
     }
